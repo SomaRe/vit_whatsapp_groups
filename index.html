@@ -8,39 +8,49 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
           .row1{
-            margin: 25px 0;
+            margin: 25px auto;
+            width: 50%;
+          }
+          #search{
+              width: 100%;
           }
           a{
             color: white;
+          }
+          .rowdata{
+              height: 700px;
+              overflow: scroll;
+          }
+          td{
+              text-align: center;
+              min-width: 20px;
+              max-width: 80px;
+              overflow: hidden;
           }
         </style>
     </head>
     <body>
 
-        <div class='container'>
-            <div class="row row1">
-              <div class="col-4 mx-auto">
-                  <input id="search" type="text" class="form-control" placeholder="Search">
+        
+            <div class="row1">
+                    <input id="search" type="text" placeholder="Search">
               </div>
-            </div>
-            <div class='row'>
-                <div class="col"></div>
-                <div class="col-8">
-                    <table class="table">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th scope="col">Subject</th>
-                                <th scope="col">Faculty name</th>
-                                <th scope="col">Slot</th>
-                                <th scope="col">Whatsapp</th>
-                                
-                            </tr>
-                        </thead>
-                        <tbody id="maininfo"></tbody>
-                    </table>
-                </div>
-                <div class="col"></div>
-            </div>
+       
+        <div class="container-fluid">
+          
+            <table class="table w-auto">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Subject</th>
+                        <th scope="col">Faculty name</th>
+                        <th scope="col">Slot</th>
+                        <th scope="col">Whatsapp</th>
+                    </tr>
+                </thead>
+                <tbody id="maininfo">
+                    
+                </tbody>
+            </table>
         </div>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
         <script src="script.js"></script>
