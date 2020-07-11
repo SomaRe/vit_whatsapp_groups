@@ -2,13 +2,12 @@
   var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/16PqM5t_b2ist3mp9l-OFAc5hNz9tAmOnB0KppxdHxwo/edit?usp=sharing';
 
   $(document).ready(function(){
+
     Tabletop.init( {
       key: publicSpreadsheetUrl,
       callback: showInfo,
       simpleSheet: true 
     } )
-  
-
   
   function showInfo(data, tabletop) {
     for(var i=0;i<data.length;i++){
